@@ -3,10 +3,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace RazorpaySampleApp
 {
-    public partial class Payment : System.Web.UI.Page
+    public partial class PaymentWithMaster : System.Web.UI.Page
     {
         public string orderId;
         protected void Page_Load(object sender, EventArgs e)
@@ -14,7 +18,7 @@ namespace RazorpaySampleApp
             string key = "rzp_test_2pjQoIV7c1RY6C";
             string secret = "nWwe91xQO3NIDzJUp1mUmr9O";
 
-            
+
             ListDictionary trf = new ListDictionary();
             trf.Add("amount", 500);
             trf.Add("account", "acc_EDR7BXuzPGG3kQ");

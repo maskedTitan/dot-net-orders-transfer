@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApiAccessTest.aspx" />
     <Content Include="Charge.aspx" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
@@ -87,6 +88,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiAccessTest.aspx.cs">
+      <DependentUpon>ApiAccessTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApiAccessTest.aspx.designer.cs">
+      <DependentUpon>ApiAccessTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Charge.aspx.cs">
       <DependentUpon>Charge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
